@@ -1,5 +1,5 @@
 #include <EOP/homework/db/dao/EOP_Homework_dao.h>
-#include <EOP/homework/db/tables/EOP_Homework.h>
+#include <EOP/homework/db/tables/EOP_Homework_table.h>
 
 static bool EOP_Homework_is_ok(int rc) {
     return rc == SQLITE_OK;

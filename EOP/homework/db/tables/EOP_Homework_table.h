@@ -1,5 +1,5 @@
-#ifndef EOP_EOP_HOMEWORK_H
-#define EOP_EOP_HOMEWORK_H
+#ifndef EOP_EOP_HOMEWORK_TABLE_H
+#define EOP_EOP_HOMEWORK_TABLE_H
 
 #define HOMEWORK "homework"
 #define TYPE_ANSWER_DATA "type_answer_data"
@@ -37,7 +37,10 @@ char *EOP_Homework_Table_create = "CREATE TABLE IF NOT EXISTS " HOMEWORK " (\n"
                                     ")";
 
 char *EOP_Type_Answer_Data_Table_init = "INSERT OR IGNORE INTO " TYPE_ANSWER_DATA " (id, type_name, code_language)\n"
-                                          " VALUES (1, 'Java 1.8', 'JAVA')\n";
+                                          " VALUES (1, 'Java 1.8', 'JAVA'),\n"
+                                          " (2, 'C++ 11', 'CPP'),\n"
+                                          " (3, 'Python 3.12.0', 'PYTHON')\n"
+                                          ;
 
 char *EOP_Type_Answer_Stat_Table_init = "INSERT OR IGNORE INTO " TYPE_ANSWER_STAT " (id, status_name)\n"
                                         " VALUES (1, 'Загружено'),\n"
@@ -49,4 +52,4 @@ char *EOP_Type_Answer_Stat_Table_init = "INSERT OR IGNORE INTO " TYPE_ANSWER_STA
 #endif
 
 
-#endif //EOP_EOP_HOMEWORK_H
+#endif //EOP_EOP_HOMEWORK_TABLE_H
