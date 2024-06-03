@@ -1,5 +1,3 @@
-#include <third_party/mongoose.h>
-#include <third_party/sqlite3.h>
 #include <EOP/homework/EOP_Homework.h>
 
 static bool EOP_Homework_is_ok(int rc) {
